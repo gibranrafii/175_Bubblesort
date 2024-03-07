@@ -36,3 +36,16 @@ void display() {			//procedure untuk menampilkan hasil
 	}
 	cout << endl; 
 }
+
+void bubbleSortArray() {	//procedure untuk mengurutkan
+	int pass = 1;
+	for (int pass; pass <= n - 1; pass++) {
+		for (int j = 0; j <= n - 1 - pass; j++) {
+			if (a[j] > a[j + 1]) {
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1]
+			}
+		}
+	}
+}
