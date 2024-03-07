@@ -37,15 +37,16 @@ void display() {			//procedure untuk menampilkan hasil
 	cout << endl;								//output baris kosong
 }
 
-void bubbleSortArray() {	//procedure untuk mengurutkan
-	int pass = 1;
-	for (int pass; pass <= n - 1; pass++) {
-		for (int j = 0; j <= n - 1 - pass; j++) {
-			if (a[j] > a[j + 1]) {
-				int temp = a[j];
-				a[j] = a[j + 1];
-				a[j + 1]
+void bubbleSortArray() {	//procedure untuk mengurutkan array dengan metode bubble sort
+	int pass = 1;			//step 1
+	for (int pass; pass <= n - 1; pass++) {		//looping dengan i dimulai dari 1 hingga n-1
+		for (int j = 0; j <= n - 1 - pass; j++) {	//jika nilai pada a[j] lebih besar dari a[j+1]
+			if (a[j] > a[j + 1]) {					//simpan ke nilai a[j] ke variabel sementara temp
+				int temp = a[j];					//assign nilai a[j+1] ke a[j]
+				a[j] = a[j + 1];					//assign nilai temp ke a[j+1]
+				a[j + 1];
 			}
 		}
 	}
 }
+
