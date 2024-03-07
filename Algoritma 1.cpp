@@ -25,7 +25,14 @@ void input() {	//procedure untuk input
 	}
 }
 
-void display() {			//procedure untuk
-
-
+void display() {			//procedure untuk menampilkan hasil
+	cout << endl;
+	cout << "=================================" << endl;
+	cout << "Element Array yang telah tersusun" << endl;
+	cout << "=================================" << endl;
+	for (int j = 0; j < n; j++) {
+		cout << "Data ke-" << j + 1 << "; ";
+		cout << a[j] << endl;
+	}
+	cout << endl; 
 }
